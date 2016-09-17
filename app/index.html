@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <title>CCM</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" />
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.css" />
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-toggle-switch/style/bootstrap3/angular-toggle-switch-bootstrap-3.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/angucomplete-alt.css" />
+    <link rel="stylesheet" href="styles/c3.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/wfmi-style.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="ccmApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div>
+
+      <nav id="navbar" class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#/" class="navbar-brand"><i class="fa fa-map-o"></i></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#/dashboard">Dashboard</a></li>
+              <li><a href="#/eligible">Eligible</a></li>
+              <li><a href="#/careManagement">Care Management</a></li>
+              <li><a href="#/patientSearch">Patient Search</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#/info"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+              <li><a href="#/alerts"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+              <li><a href="#/settings"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+     
+      <div id="appCtrl" class="container-fluid" ng-controller="AppCtrl">
+        <div ng-show="loading" class="loading">
+          <i class="fa fa-spinner fa-spin fa-pulse fa-3x fa-fw"></i>
+          <span class="sr-only">Loading...</span>
+        </div>
+
+        <div ng-show="!loading" ng-view></div>
+      </div>
+
+    </div>
+
+    <hr />
+
+    <div class="footer">
+      <span>&copy; 2016 CCM</span>
+      <span>Legal</span>
+      <span>Privacy & Cookie</span>
+      <span><a href="#/help">Help</a></span>
+    </div>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
+    <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="bower_components/angular-bootstrap-datetimepicker-directive/angular-bootstrap-datetimepicker-directive.js"></script>
+    <script src="bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
+    <script src="bower_components/angular-bootstrap-switch/dist/angular-bootstrap-switch.js"></script>
+    <script src="bower_components/restangular/dist/restangular.js"></script>
+    <script src="bower_components/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.js"></script>
+    <script src="bower_components/angular-bootstrap-toggle-switch/angular-toggle-switch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/angucomplete-alt.js"></script>
+    <script src="scripts/ui-bootstrap-tpls.js"></script>
+    <script src="scripts/lodash.js"></script>
+    <script src="scripts/c3.js"></script>
+    <script src="scripts/d3.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config.js"></script>
+
+    <script src="scripts/controllers/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/dashboard.js"></script>
+    <script src="scripts/controllers/eligible.js"></script>
+    <script src="scripts/controllers/careManagement.js"></script>
+    <script src="scripts/controllers/patient.js"></script>
+    <script src="scripts/controllers/patientSearch.js"></script>
+    <script src="scripts/controllers/info.js"></script>
+    <script src="scripts/controllers/alerts.js"></script>
+    <script src="scripts/controllers/settings.js"></script>
+    <script src="scripts/controllers/help.js"></script>
+
+    <script src="scripts/services/patientsSvc.js"></script>
+    <script src="scripts/services/encountersSvc.js"></script>
+    <script src="scripts/services/constantsSvc.js"></script>
+
+    <script src="scripts/filters/duration.js"></script>
+
+    <script src="scripts/directives/minutesBarWidget.js"></script>
+    <script src="scripts/directives/donutWidget.js"></script>
+    <script src="scripts/directives/pieWidget.js"></script>
+    <script src="scripts/directives/barWidget.js"></script>
+    <script src="scripts/directives/timerDonutWidget.js"></script>
+    <script src="scripts/directives/encounterTypeWidget.js"></script>
+    <script src="scripts/directives/encounterHeaderWidget.js"></script>
+    <script src="scripts/directives/encounterTimerWidget.js"></script>
+    <script src="scripts/directives/notesWidget.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
+<!-- v@@version @@timestamp -->

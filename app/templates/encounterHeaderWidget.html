@@ -1,0 +1,24 @@
+            <div class="col-md-2">
+              <div class="user-img"><i class="fa fa-user"></i></div>
+              Enrolled: <toggle-switch ng-model="enrolled" class="switch-small"></toggle-switch>
+            </div>
+            <div class="col-md-4">
+              <h4>{{patient.first}} {{patient.last}}</h4>
+              <div>Phone: {{patient.phone}}</div>
+              <div>email: {{patient.email}}</div>
+              <div>Facility: {{patient.location}}</div>
+              <div>Supplemental: {{patient.supplemental}}</div>
+              <div>Medicare ID: {{patient.id}}</div>
+            </div>
+            <div class="col-md-4">
+              <div>Age: {{patient.age}}</div>
+              <div>Sex: {{patient.sex}}</div>
+              <div>Number of chronic illnesses: </div>
+              <div>Physician: {{patient.physician}}</div>
+              <div>Consent Policy: {{patient.consent}}</div>
+              <div>Last Visit: {{patient.lastVisit}}</div>
+            </div>
+            <div class="col-md-2">
+              <timer-donut-widget data="timer.donut"></timer-donut-widget>
+            </div>
+

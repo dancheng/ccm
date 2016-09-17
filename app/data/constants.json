@@ -1,0 +1,16 @@
+{
+  "problems": [
+    {
+      "id": 1,
+      "name": "Diabetes" 
+    },
+    {
+      "id": 2,
+      "name": "Hypertension" 
+    },
+    {
+      "id": 3,
+      "name": "C.O.P.D." 
+    }
+  ]
+}

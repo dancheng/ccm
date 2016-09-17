@@ -1,0 +1,45 @@
+<div id="eligible">
+  <div class="row header">
+    <div class="col-md-12">
+      <h3>Eligible Patients</h3> <span>(130 of 1000)</span>
+      <button class="print"><i class="fa fa-print"></i></button>
+      <button class="refresh"><i class="fa fa-refresh"></i></button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-striped table-hover header-fixed">
+          <thead>
+            <tr>
+              <th><br/>First</th>
+              <th><br/>Last</th>
+              <th><br/>Age</th>
+              <th><br/>Sex</th>
+              <th><br/>ID</th>
+              <th><br/>Chronic</th>
+              <th><br/>Location</th>
+              <th><br/>Physician</th>
+              <th>Last<br/>Visit</th>
+              <th><br/>Declined</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="item in data">
+              <td>{{item.first}}</td>
+              <td>{{item.last}}</td>
+              <td>{{item.age}}</td>
+              <td>{{item.sex}}</td>
+              <td><a href="#/patient/{{item.id}}">{{item.id}}</a></td>
+              <td>{{item.chronic}}</td>
+              <td>{{item.location}}</td>
+              <td>{{item.physician}}</td>
+              <td>{{item.lastVisit}}</td>
+              <td>{{item.declined}}</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

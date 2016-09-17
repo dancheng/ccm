@@ -1,0 +1,102 @@
+<div id="dashboard">
+  <div class="row">
+    <div id="leftNav" class="col-lg-1 col-md-1 col-sm-1">
+      <ul class="nav" data-tabs="tabs">
+        <li class="active"><a href="#enrolled" ng-click="click($event)"><i class="fa fa-heart" aria-hidden="true"></i><br/>Enrolled</a></li>
+        <li><a href="#eligible" ng-click="click($event)"><i class="fa fa-star" aria-hidden="true"></i><br/>Eligible</a></li>
+        <li><a href="#users" ng-click="click($event)"><i class="fa fa-user" aria-hidden="true"></i><br/>Users</a></li>
+      </ul>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-3 hidden-xs">
+      <!-- Placeholder - keep empty -->
+    </div> 
+
+    <div class="col-lg-10 col-md-9 col-sm-9">
+
+      <div class="tab-content">
+        <div id="enrolled" class="tab-pane fade in active dashboard-tab-content">
+          <div class="row header">
+            <div class="col-md-12">
+              <h3>Enrolled</h3>
+              <select 
+                ng-options="loc.name for loc in locations track by loc.id"
+                ng-model="location">
+              </select>
+
+              <button class="print"><i class="fa fa-print"></i></button>
+              <button class="refresh"><i class="fa fa-refresh"></i></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Productivty: Mar. 2016</h4>
+              <donut-widget data="enrolled.donut"></donut-widget>
+            </div>
+            <div class="col-md-6">
+              <h4>John Hopkin's ACG System</h4>
+              <pie-widget data="enrolled.pie"></pie-widget>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Physicians</h4>
+              <bar-widget data="enrolled.bar"></bar-widget>
+            </div>
+          </div>
+        </div>
+
+        <div id="eligible" class="tab-pane fade dashboard-tab-content">
+          <div class="row header">
+            <div class="col-md-12">
+              <h3>Eligible</h3>
+              <select 
+                ng-options="loc.name for loc in locations track by loc.id"
+                ng-model="location">
+              </select>
+              <button class="print"><i class="fa fa-print"></i></button>
+              <button class="refresh"><i class="fa fa-refresh"></i></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Productivty: Mar. 2016</h4>
+              <donut-widget data="eligible.donut"></donut-widget>
+            </div>
+            <div class="col-md-6">
+              <h4>John Hopkin's ACG System</h4>
+              <pie-widget data="eligible.pie"></pie-widget>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Physicians</h4>
+              <bar-widget data="eligible.bar"></bar-widget>
+            </div>
+          </div>
+        </div>
+
+        <div id="users" class="tab-pane fade dashboard-tab-content">
+         <div class="row header">
+            <div class="col-md-12">
+              <h3>Users</h3>
+              <select 
+                ng-options="loc.name for loc in locations track by loc.id"
+                ng-model="location">
+              </select>
+              <button class="print"><i class="fa fa-print"></i></button>
+              <button class="refresh"><i class="fa fa-refresh"></i></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Productivty: Mar. 2016</h4>
+              <bar-widget data="users.bar"></bar-widget>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+  </div>
+</div>

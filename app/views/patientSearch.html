@@ -1,0 +1,51 @@
+<div id="patientSearch">
+  <div class="row">
+    <div class="col-md-12 patient-search">
+      <h3>Patient Search</h3>
+      <form>
+        <input type="text" placeholder="Enter text here" />
+        <div>
+          <button><i class="fa fa-search"></i> Patient Search</button>
+          <button>Advanced Search</button>
+        </div>
+      </form>
+    </div> 
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h4>Recently Searched</h4>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover header-fixed">
+          <thead>
+            <tr>
+              <th><br/>First</th>
+              <th><br/>Last</th>
+              <th><br/>Age</th>
+              <th><br/>Sex</th>
+              <th><br/>ID</th>
+              <th><br/>Chronic</th>
+              <th><br/>Location</th>
+              <th><br/>Physician</th>
+              <th>Last<br/>Visit</th>
+              <th><br/>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="item in data">
+              <td>{{item.first}}</td>
+              <td>{{item.last}}</td>
+              <td>{{item.age}}</td>
+              <td>{{item.sex}}</td>
+              <td>{{item.id}}</td>
+              <td>{{item.chronic}}</td>
+              <td>{{item.location}}</td>
+              <td>{{item.physician}}</td>
+              <td>{{item.lastVisit}}</td>
+              <td>{{item.status}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

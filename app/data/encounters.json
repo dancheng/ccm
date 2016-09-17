@@ -1,0 +1,120 @@
+{
+  "encounters": [
+    {
+      "id": "5671230",
+      "encounters": [
+        {
+          "datetime": "2016-03-16T13:15:30Z",
+          "providerId": "1",
+          "problemId": "2",
+          "type": "phone",
+          "notesId": 1,
+          "duration": 335
+        },
+        {
+          "datetime": "2016-03-01T17:31:30Z",
+          "providerId": "1",
+          "problemId": "3",
+          "type": "in-person",
+          "notesId": 0,
+          "duration": 248
+        },
+        {
+          "datetime": "2016-02-18T12:48:30Z",
+          "providerId": "1",
+          "problemId": "1",
+          "type": "email",
+          "notesId": 1,
+          "duration": 335
+        } 
+      ]
+    },
+    {
+      "id": "8273403",
+      "encounters": [
+        {
+          "datetime": "2016-03-16T13:15:30Z",
+          "providerId": "1",
+          "problemId": "2",
+          "type": "phone",
+          "notesId": 1,
+          "duration": 335
+        },
+        {
+          "datetime": "2016-03-01T17:31:30Z",
+          "providerId": "1",
+          "problemId": "2",
+          "type": "in-person",
+          "notesId": 0,
+          "duration": 248
+        },
+        {
+          "datetime": "2016-02-18T12:48:30Z",
+          "providerId": "1",
+          "problemId": "2",
+          "type": "email",
+          "notesId": 1,
+          "duration": 335
+        }
+      ]
+    },
+    {
+      "id": "4672241",
+      "encounters": [
+        {
+          "datetime": "2016-03-16T13:15:30Z",
+          "providerId": "1",
+          "problemId": "3",
+          "type": "phone",
+          "notesId": 1,
+          "duration": 335
+        },
+        {
+          "datetime": "2016-03-01T17:31:30Z",
+          "providerId": "1",
+          "problemId": "3",
+          "type": "in-person",
+          "notesId": 0,
+          "duration": 248
+        },
+        {
+          "datetime": "2016-02-18T12:48:30Z",
+          "providerId": "1",
+          "problemId": "3",
+          "type": "email",
+          "notesId": 1,
+          "duration": 335
+        }
+      ]
+    },
+    {
+      "id": "9839551",
+      "encounters": [
+        {
+          "datetime": "2016-03-16T13:15:30Z",
+          "providerId": "1",
+          "problemId": "1",
+          "type": "phone",
+          "notesId": 1,
+          "duration": 335
+        },
+        {
+          "datetime": "2016-03-01T17:31:30Z",
+          "providerId": "1",
+          "problemId": "1",
+          "type": "in-person",
+          "notesId": 0,
+          "duration": 248
+        },
+        {
+          "datetime": "2016-02-18T12:48:30Z",
+          "providerId": "1",
+          "problemId": "1",
+          "type": "email",
+          "notesId": 1,
+          "duration": 335
+        }
+      ]
+    }
+  ]
+}
